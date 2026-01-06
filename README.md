@@ -57,7 +57,7 @@ Detects Node, Java, .NET projects recursively.
 
 ### usage
 ```bash
-scan-projects <path> #print disk usage
+scan-projects <path>
 ```
 
 ### output
@@ -73,7 +73,7 @@ Checks common environment variables that often break builds.
 
 ### usage
 ```bash
-env-check <path> #print disk usage
+env-check <path>
 ```
 ### output
 ```text
