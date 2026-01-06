@@ -1,7 +1,7 @@
 # DevEnvCheck
 A lightweight and extendable **Java 8+ CLI tool for auditing and diagnosing Windows developer environments**.
 
-Originally created after a real recovery incident, this tool helps validate that common development tools, SDKs, and environment variables are correctly installed and discoverable. 
+Originally created after a real recovery incident, this tool helps validate that common development tools, SDKs, and environment variables are correctly installed and discoverable. Easily extendable to fit your use case.
 
 > **Windows only** – relies on `cmd`, `where`, `wmic`, and Windows install conventions.
 
@@ -11,7 +11,7 @@ Originally created after a real recovery incident, this tool helps validate that
 
 - **Windows**
 - **Java 8+**
-- Maven (for building)
+- **Maven (for building)**
 
 ---
 
