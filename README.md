@@ -1,10 +1,20 @@
-# DevInstallCheck
-Internal Java 8 CLI for restoring and auditing developer environments on Windows.
+# DevEnvCheck
+A lightweight and extendable **Java 8+ CLI tool for auditing and diagnosing Windows developer environments**.
 
->I developed an internal Java CLI tooling to support Windows environment recovery and auditing after an incident.
+Originally created after a real recovery incident, this tool helps validate that common development tools, SDKs, and environment variables are correctly installed and discoverable. 
 
->"DevEnvCheck"
-Designed a modular Java CLI with extensible subcommands for environment validation, dependency cleanup, and workspace restoration.
+> **Windows only** – relies on `cmd`, `where`, `wmic`, and Windows install conventions.
+
+---
+
+## Requirements
+
+- **Windows**
+- **Java 8+**
+- Maven (for building)
+
+---
+
 
 ## Commands
 
@@ -43,6 +53,7 @@ vscode          | C:\Users\...\Code.exe             | 1.86.2         | [x]
 Visual Studio   | C:\Program Files\Microsoft VS\    | 2022           | [x]
 .NET SDK        | -                                 | 8.0.100        | [x]
 ```
+---
 ### clean-node-modules
 Recursively find and delete node_modules folders given a root path.
 
@@ -52,6 +63,7 @@ clean-node-modules <path> #asks for confirmation y/N before deleting
 clean-node-modules <path> --silent #no confirmation
 clean-node-modules <path> --dry-run #lists what would be deleted but doesn't delete
 ```
+---
 ### scan-projects
 Detects Node, Java, .NET projects recursively.
 
@@ -66,8 +78,8 @@ Node: 12
 Java: 5
 .NET: 3
 Python: 2
-
 ```
+---
 ### env-check
 Checks common environment variables that often break builds.
 
@@ -83,12 +95,13 @@ PATH: SET
 HTTP_PROXY: NOT SET
 HTTPS_PROXY: NOT SET
 ```
-## Java Version
-Compatible with Java 8+
-
+---
 ## Build
-mvn package
 
+```bash
+mvn package
+```
+---
 ## Dependencies
-- Only PicoCLI.
+- PicoCLI.
 
