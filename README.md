@@ -1,4 +1,6 @@
 # DevEnvCheck
+<p align="center"><img  height="300" alt="devenvcheck" src="https://github.com/user-attachments/assets/ea182642-f6e3-4ba0-acdc-e03024b50418" /></p>
+
 A lightweight and extendable **Java 8+ CLI tool for auditing and diagnosing Windows developer environments**.
 
 Originally created after a real recovery incident, this tool helps validate that common development tools, SDKs, and environment variables are correctly installed and discoverable. Easily extendable to fit your use case.
