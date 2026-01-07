@@ -5,7 +5,7 @@ A lightweight and extendable **Java 8+ CLI tool for auditing and diagnosing Wind
 
 Originally created after a real recovery incident, this tool helps validate that common development tools, SDKs, and environment variables are correctly installed and discoverable. Easily extendable to fit your use case.
 
-> **Windows only** – relies on `cmd`, `where`, `wmic`, and Windows install conventions.
+> **Windows only** ; it relies on `cmd`, `where`, `wmic`, and Windows install conventions.
 
 ---
 
@@ -24,10 +24,11 @@ Originally created after a real recovery incident, this tool helps validate that
 Detects common development software installations and reports whether they're present.
 
 ### Usage
-Check for installation of regular developer software on windows.
+```bash
 check-installation #uses default software list
 check-installation --export  #export report as .txt file
 check-installation --config software.json #load json entries from file
+```
 
 ### software.json example
 ```json
